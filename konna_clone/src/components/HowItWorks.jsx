@@ -107,10 +107,10 @@ const HowItworks = () => {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
-                className="flex items-center mx-auto "
+                className="flex items-center mx-auto  justify-between"
               >
                 <img src={step.image} width={50} alt={step.title} />
-                <span className="bg-primary px-3 py-1 rounded-lg ml-auto">
+                <span className="bg-primary px-3 py-1 rounded-lg ">
                   step {index + 1}
                 </span>
               </motion.div>
