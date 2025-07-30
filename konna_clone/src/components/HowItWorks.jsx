@@ -110,7 +110,7 @@ const HowItworks = () => {
                 className="flex items-center mx-auto "
               >
                 <img src={step.image} width={50} alt={step.title} />
-                <span className="bg-primary px-3 py-1 rounded-lg">
+                <span className="bg-primary px-3 py-1 rounded-lg ml-auto">
                   step {index + 1}
                 </span>
               </motion.div>

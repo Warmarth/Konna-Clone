@@ -82,7 +82,7 @@ const WhatToKnow = () => {
           ))}
         </ul>
       </section>
-      <section className="w-5/6  mx-auto my-10 p-2">
+      <section className="w-5/6  mx-auto my-10 p-2 ">
         <article className="md:flex-row flex flex-col items-center justify-between gap-3 ">
           <div className="md:card text-primary-content  md:w-[30rem]">
             <div className="card-body space-y-3">
@@ -112,7 +112,7 @@ const WhatToKnow = () => {
           </div>
         </article>
       </section>
-      <section className="w-5/6  mx-auto my-10 p-2 bg-gradient-to-bl from-5% to-secondary  rounded-2xl ">
+      <section className="w-5/6  mx-auto my-10 p-2 bg-gradient-to-bl from-5% to-secondary py-7 rounded-2xl ">
         <article className="md:flex-row flex flex-col items-center justify-between gap-3 ">
           <div className=" card text-primary-content sm:w-[30rem]">
             <div className="card-body space-y-3">
@@ -145,7 +145,7 @@ const WhatToKnow = () => {
           </div>
         </article>
       </section>
-      <section className="w-5/6  mx-auto my-10 p-2 bg-gradient-to-bl from-10% to-primary rounded-2xl">
+      <section className="w-5/6  mx-auto my-10 p-2 bg-gradient-to-bl from-10% to-primary rounded-2xl py-7">
         <article className="md:flex-row flex flex-col items-center justify-between gap-3 ">
           <div className=" card text-primary-content sm:w-[30rem]">
             <div className="card-body space-y-3">
