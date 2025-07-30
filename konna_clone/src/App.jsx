@@ -10,7 +10,7 @@ import WhatToKnow from "./components/WhatToKnow.jsx";
 
 function App() {
   return (
-    <main className="border">
+    <main className="">
       <Header />
       <Hero />
       <WhatToKnow />

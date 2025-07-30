@@ -60,7 +60,7 @@ const WhatToKnow = () => {
   ];
 
   return (
-    <div className="border ">
+    <div className="">
       <section className="w-5/6  mx-auto my-10 p-2 ">
         <h1 className="text-3xl mb-6 md:text-center lg:text-4xl transition-transform ease-in-out duration-300">
           What you can do with Konna
@@ -112,7 +112,7 @@ const WhatToKnow = () => {
           </div>
         </article>
       </section>
-      <section className="w-5/6  mx-auto my-10 p-2 bg-gradient-to-bl from-5% to-secondary  rounded-2xl border">
+      <section className="w-5/6  mx-auto my-10 p-2 bg-gradient-to-bl from-5% to-secondary  rounded-2xl ">
         <article className="md:flex-row flex flex-col items-center justify-between gap-3 ">
           <div className=" card text-primary-content sm:w-[30rem]">
             <div className="card-body space-y-3">

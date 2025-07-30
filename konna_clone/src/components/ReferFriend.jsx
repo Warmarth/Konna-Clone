@@ -8,7 +8,7 @@ const ReferFriend = () => {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      viewport={{ once: true, amount: 0.3 }} 
+      viewport={{ once: true, amount: 0.3 }}
     >
       <motion.article
         className="bg-base-100 space-y-5 p-5 rounded-lg shadow-lg flex flex-col justify-center lg:text-left"
@@ -24,7 +24,7 @@ const ReferFriend = () => {
             Refer a friend to open a shop at Konna and enjoy one-month free
             subscription fee
           </p>
-          <button className="btn btn-accent w-1/2 mt-2.5">
+          <button className="btn btn-accent w-1/2 mt-2.5 font-extrabold text-xl">
             refer a friend
           </button>
         </div>
