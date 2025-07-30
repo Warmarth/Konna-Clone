@@ -55,7 +55,7 @@ function Testimonial() {
   }, []);
 
   return (
-    <div className="bg-gradient-to-bl from-5% to-secondary text-white p-10 max-h-[100vh] ">
+    <div className="bg-gradient-to-bl from-5% to-secondary text-white p-10 ">
       <article className="flex flex-col items-center justify-center text-center space-y-2">
         <h1 className="text-2xl font-bold">Testimonial</h1>
         <h2 className="font-semibold text-4xl">Hear from our Customers</h2>
