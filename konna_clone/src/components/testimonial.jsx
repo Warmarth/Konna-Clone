@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Testimonial() {
   const testimonials = [
@@ -28,7 +28,7 @@ function Testimonial() {
       name: "Bob Brown",
       designation: "CTO, Startup Inc.",
       feedback:
-        "The analytics features are a game-changer. I can now make data-driven decisions tat have significantly improved my business performance.",
+        "The analytics features are a game-changer. I can now make data-driven decisions that have significantly improved my business performance.",
     },
     {
       image: "https://i.ibb.co/4d1f3bH/Rectangle-1.png",
@@ -39,43 +39,66 @@ function Testimonial() {
     },
   ];
 
-  const [viewMore, setViewMore] = useState(testimonials);
   const [ind, setInd] = useState(0);
 
-  const movingCard = () => {
+  const nextTestimonial = () => {
     setInd((prev) => (prev + 1) % testimonials.length);
   };
 
+  const prevTestimonial = () => {
+    setInd((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+  };
+
+  useEffect(() => {
+    const interval = setInterval(nextTestimonial, 6000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <div className=" bg-gradient-to-bl from-5% to-secondary text-white p-10 h-[100vh] overflow-hidden">
-      <article
-        className="
-        flex flex-col items-center justify-center text-center space-y-2 "
-      >
-        <h1 className="text-2xl b">Testimonial</h1>
-        <h2 className="semi-bold text-4xl">Hear from our Customers</h2>
+    <div className="bg-gradient-to-bl from-5% to-secondary text-white p-10 min-h-[100vh] overflow-hidden">
+      <article className="flex flex-col items-center justify-center text-center space-y-2">
+        <h1 className="text-2xl font-bold">Testimonial</h1>
+        <h2 className="font-semibold text-4xl">Hear from our Customers</h2>
         <p className="text-lg w-3/4">
           Here is the feedback from our clients regarding their experiences
           using Konna for their business management.
         </p>
       </article>
-      <div className="flex flex-col items-center justify-center gap-3 overflow-hidden base-100 p-5 rounded-lg shadow-lg mt-10">
-        <div className="flex flex-col items-left p-4 justify-center bg-white text-black  rounded-lg shadow-lg w-[20rem] hover:scale-105 transition-all duration-300">
-          <div className="flex items-center gap-4 ">
+
+      <div className="flex flex-col items-center justify-center gap-4 bg-base-100 p-5 rounded-lg shadow-lg mt-10">
+        <div className="flex flex-col items-left p-4 justify-center bg-white text-black rounded-lg shadow-lg w-[20rem] hover:scale-105 transition-all duration-500 ease-in-out">
+          <div className="flex items-center gap-4">
             <img
               src={testimonials[ind].image}
               alt={testimonials[ind].name}
-              className="w-14 h-14 rounded-full "
+              className="w-14 h-14 rounded-full"
             />
             <article>
-              <h3 className="text-xl font-semibold">
-                {testimonials[ind].name}
-              </h3>
+              <h3 className="text-xl font-semibold">{testimonials[ind].name}</h3>
               <p className="text-sm italic">{testimonials[ind].designation}</p>
             </article>
           </div>
           <p className="text-base mt-2">{testimonials[ind].feedback}</p>
+        </div>
+
+        <div className="flex gap-4 mt-4">
+          <button onClick={prevTestimonial} className="btn btn-sm btn-outline">
+            ← Prev
+          </button>
+          <button onClick={nextTestimonial} className="btn btn-sm btn-outline">
+            Next →
+          </button>
+        </div>
+
+        <div className="flex gap-2 mt-2">
+          {testimonials.map((_, i) => (
+            <span
+              key={i}
+              className={`w-3 h-3 rounded-full ${
+                i === ind ? "bg-secondary" : "bg-white opacity-30"
+              }`}
+            ></span>
+          ))}
         </div>
       </div>
     </div>

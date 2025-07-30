@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import frame1 from "/frame1.svg";
 import Layer_1 from "/Layer_1.svg";
 import Layer_last from "/Layer_last.svg";
@@ -92,19 +94,29 @@ const HowItworks = () => {
         </article>
         <div className="flex gap-5 flex-wrap transition-all duration-500 justify-center items-center flex-auto flex-shrink-0">
           {getStartedSteps.map((step, index) => (
-            <article
+            <motion.article
               key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true }}
               className="p-4 w-[15rem] h-[12rem] border-2 rounded-2xl border-gray-200 text-left hover:scale-110 transition-all duration-300 hover:bg-white hover:text-black shadow-lg"
             >
-              <div className="flex items-center justify-between gap-3 mb-2 ">
+              <motion.div
+                initial={{ x: -50, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                className="flex items-center mx-auto "
+              >
                 <img src={step.image} width={50} alt={step.title} />
                 <span className="bg-primary px-3 py-1 rounded-lg">
                   step {index + 1}
                 </span>
-              </div>
+              </motion.div>
               <h2 className="font-bold">{step.title}</h2>
               <p className="text-sm">{step.description}</p>
-            </article>
+            </motion.article>
           ))}
         </div>
       </section>

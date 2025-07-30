@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
+
 
 const Subscription = () => {
   const [billingCycle, setBillingCycle] = useState("monthly");
@@ -97,14 +99,19 @@ const Subscription = () => {
     <div>
       <section className="w-5/6 mx-auto text-white p-10 flex flex-col gap-3 items-center justify-center">
         <div className="flex flex-col items-center justify-center gap-2 text-center w-2/3 mb-10 mx-auto">
-          <h1 className="text-2xl">Konna Subscription Plan</h1>
-          <p>
+          <h1 className="text-3xl font-bold text-gray-200 mb-4">
+            Konna Subscription Plan
+          </h1>
+          <p className="text-gray-600 text-base leading-relaxed">
             Choose a subscription plan that fits your budget to have unlimited
-            access to all the features. Save up to NGN 8000 when you subscribe
-            annually.
+            access to all the features.
+            <span className="font-semibold text-green-600">
+              {" "}
+              Save up to NGN 8000
+            </span>{" "}
+            when you subscribe annually.
           </p>
 
-    
           <div className="flex justify-center items-center gap-4 mt-4">
             <label
               htmlFor="currency"
@@ -126,7 +133,6 @@ const Subscription = () => {
             </select>
           </div>
 
-    
           <div className="mt-6 flex items-center gap-2 text-sm">
             <span
               className={`cursor-pointer px-3 py-1 rounded-full ${
@@ -154,17 +160,21 @@ const Subscription = () => {
         <h2 className="text-xl">Subscription Plans</h2>
         <div className="flex flex-col items-center justify-center md:flex-row flex-wrap mt-10 gap-5">
           {plans.map((plan, index) => (
-            <div
-              key={index}
-              className="card w-96 bg-base-100 shadow-sm hover:scale-105 transition-all duration-300 hover:bg-blue-400"
-            >
+          <motion.div
+  key={index}
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5, delay: index * 0.1 }}
+  viewport={{ once: true }}
+  className="card w-80 shadow-sm hover:scale-105 transition-all duration-300 hover:bg-green-400 bg-gradient-to-bl from-5% to-secondary"
+>
               <div className="card-body">
                 {plan.isPopular && (
                   <span className="badge badge-xs badge-warning mb-2">
                     Most Popular
                   </span>
                 )}
-                <div className="flex justify-between">
+                <div className="flex justify-between items-center">
                   <h2 className="text-3xl font-bold">{plan.name}</h2>
                   <span className="text-xl">
                     {formatPrice(plan.pricing[billingCycle])}
@@ -216,7 +226,7 @@ const Subscription = () => {
                   </button>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </section>
