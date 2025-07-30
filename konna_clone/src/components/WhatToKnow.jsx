@@ -65,7 +65,7 @@ const WhatToKnow = () => {
         <h1 className="text-3xl mb-6 md:text-center lg:text-4xl transition-transform ease-in-out duration-300">
           What you can do with Konna
         </h1>
-        <ul className="bg-[url('/endless-constellation.svg')] bg-repeat  w-full rounded-md  p-4 flex flex-col justify-stretch gap-6 md:flex-row flex-wrap ">
+        <ul className="bg-[url('/endless-constellation.svg')] bg-gradient-to-tl from-lime-300 to-lime-600 bg-repeat  w-full rounded-md  p-4 flex flex-col justify-stretch gap-6 md:flex-row flex-wrap ">
           {whatWorks.map((feature, index) => (
             <li
               key={index}

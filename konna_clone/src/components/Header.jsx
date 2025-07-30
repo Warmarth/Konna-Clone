@@ -352,7 +352,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="flex items-center justify-between shadow-md top-0 sticky bg-gradient-to-tl from-lime-300 to-lime-600-4 py-2 z-50">
+    <header className="flex items-center justify-between shadow-md top-0 sticky bg-gradient-to-tl from-lime-300 to-lime-900 py-2 z-50 ">
       <img src={logo} alt="logo" className="w-24 h-auto" />
 
       <button
