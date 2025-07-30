@@ -60,8 +60,8 @@ const WhatToKnow = () => {
   ];
 
   return (
-    <div className=" ">
-      <section className="w-5/6  mx-auto my-10 p-2">
+    <div className="border ">
+      <section className="w-5/6  mx-auto my-10 p-2 ">
         <h1 className="text-3xl mb-6 md:text-center lg:text-4xl transition-transform ease-in-out duration-300">
           What you can do with Konna
         </h1>
@@ -84,7 +84,7 @@ const WhatToKnow = () => {
       </section>
       <section className="w-5/6  mx-auto my-10 p-2">
         <article className="md:flex-row flex flex-col items-center justify-between gap-3 ">
-          <div className="card text-primary-content w-[30rem]">
+          <div className="md:card text-primary-content  md:w-[30rem]">
             <div className="card-body space-y-3">
               <h2 className="card-title text-amber-500 text-2xl">
                 POINT OF SALE(POS) SYSTEM
@@ -112,9 +112,9 @@ const WhatToKnow = () => {
           </div>
         </article>
       </section>
-      <section className="w-5/6  mx-auto my-10 p-2 bg-gradient-to-bl from-5% to-secondary  rounded-2xl">
+      <section className="w-5/6  mx-auto my-10 p-2 bg-gradient-to-bl from-5% to-secondary  rounded-2xl border">
         <article className="md:flex-row flex flex-col items-center justify-between gap-3 ">
-          <div className=" card text-primary-content w-[30rem]">
+          <div className=" card text-primary-content sm:w-[30rem]">
             <div className="card-body space-y-3">
               <h2 className="card-title text-teal-500 text-2xl">
                 AI-POWERED BUSINESS ANALYTICS
@@ -141,13 +141,13 @@ const WhatToKnow = () => {
             </div>
           </div>
           <div className=" flex items-center justify-center">
-            <img src={anaylitics} width={400} height={400} alt="" />
+            <img src={anaylitics} width={400} height={400} alt="analytics" />
           </div>
         </article>
       </section>
       <section className="w-5/6  mx-auto my-10 p-2 bg-gradient-to-bl from-10% to-primary rounded-2xl">
         <article className="md:flex-row flex flex-col items-center justify-between gap-3 ">
-          <div className=" card text-primary-content w-[30rem]">
+          <div className=" card text-primary-content sm:w-[30rem]">
             <div className="card-body space-y-3">
               <h3 className="text-xl">
                 Your Own Online Store is <br /> with{" "}
@@ -166,13 +166,13 @@ const WhatToKnow = () => {
             </div>
           </div>
           <div className=" flex items-center justify-center">
-            <img src={online} width={400} height={400} alt="" />
+            <img src={online} width={400} height={400} alt="online" />
           </div>
         </article>
       </section>
       <section className="w-5/6  mx-auto my-10 p-2 bg-gradient-to-bl from-5% to-base  rounded-2xl">
         <article className="md:flex-row flex flex-col items-center justify-between gap-3 ">
-          <div className=" card text-primary-content w-[30rem]">
+          <div className=" card text-primary-content sm:w-[30rem]">
             <div className="card-body space-y-3">
               <h2 className="card-title text-amber-500 text-2xl">
                 OFFLINE STORE
@@ -196,7 +196,7 @@ const WhatToKnow = () => {
             </div>
           </div>
           <div className=" flex items-center justify-center">
-            <img src={monitor2} width={400} height={400} alt="" />
+            <img src={monitor2} width={400} height={400} alt="monitor2" />
           </div>
         </article>
       </section>

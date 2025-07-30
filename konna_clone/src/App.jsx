@@ -10,7 +10,7 @@ import WhatToKnow from "./components/WhatToKnow.jsx";
 
 function App() {
   return (
-    <>
+    <main className="border">
       <Header />
       <Hero />
       <WhatToKnow />
@@ -20,7 +20,7 @@ function App() {
       <Accordion />
       <ReferFriend />
       <FooterPage />
-    </>
+    </main>
   );
 }
 

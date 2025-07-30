@@ -398,7 +398,7 @@ const Header = () => {
           >
             <a href="#">features</a>
             {hoveredMenu === "features" && (
-              <div className="absolute top-full left-0 bg-blue-900 shadow rounded p-3 text-sm z-50 w-[25rem] mt-2 ">
+              <div className="absolute top-full left-0 bg-blue-900 shadow rounded p-3 text-sm z-50 w-full md:w-[25rem] mt-2 ">
                 {features.map((feature, index) => (
                   <article
                     key={index}
@@ -406,7 +406,7 @@ const Header = () => {
                     onMouseOut={() => setHoveredMenu(null)}
                   >
                     <div>{feature.icon}</div>
-                    <div>
+                    <div onMouseOut={() => setHoveredMenu(null)}>
                       <h3 className="text-lg">{feature.title}</h3>
                       <p className="text-sm text-gray-300">
                         {feature.description}
@@ -424,7 +424,7 @@ const Header = () => {
           >
             <a href="#">supported businesses</a>
             {hoveredMenu === "supported" && (
-              <div className="absolute top-full left-0 bg-blue-900 shadow rounded p-3 text-sm z-20 w-[25rem] mt-2 overflow-y-scroll overflow-x-hidden h-[20rem]  ">
+              <div className="absolute top-full left-0 bg-blue-900 shadow rounded p-3 text-sm z-20 w-full md:w-[25rem] mt-2 overflow-y-scroll overflow-x-hidden h-[20rem]  ">
                 {supportedBusinesses.map((item, index) => (
                   <article
                     key={index}
