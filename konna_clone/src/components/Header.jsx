@@ -461,6 +461,40 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+      <div className="modal " role="dialog" id="my_modal">
+        <div className="modal-box">
+          <h3 className="text-lg font-bold mb-4">Hello!</h3>
+          <form className="flex flex-col gap-4">
+            <div className="form-control">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="input input-bordered"
+                required
+              />
+            </div>
+            <div className="form-control">
+              <input
+                type="password"
+                placeholder="Enter your password"
+                className="input input-bordered"
+                required
+              />
+            </div>
+            <div className="form-control mt-4">
+              <button type="submit" className="btn btn-primary w-full">
+                Login
+              </button>
+            </div>
+          </form>
+
+          <div className="modal-action">
+            <a href="#" className="btn">
+              Close
+            </a>
+          </div>
+        </div>
+      </div>
     </header>
   );
 };
