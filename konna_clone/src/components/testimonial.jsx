@@ -55,7 +55,7 @@ function Testimonial() {
   }, []);
 
   return (
-    <div className="bg-gradient-to-tl from-lime-300 to-lime-600 text-white p-10 ">
+    <div className="bg-gradient-to-tl  text-white p-10 ">
       <article className="flex flex-col items-center justify-center text-center space-y-2">
         <h1 className="text-2xl font-bold">Testimonial</h1>
         <h2 className="font-semibold text-4xl">Hear from our Customers</h2>
@@ -65,8 +65,8 @@ function Testimonial() {
         </p>
       </article>
 
-      <div className="flex flex-col items-center justify-center gap-4 bg-blue-950 p-5 rounded-lg shadow-lg mt-10 ">
-        <div className="flex flex-col items-left p-4 justify-center bg-white text-black rounded-lg shadow-lg sm:w-[20rem] hover:scale-105 transition-all duration-500 ease-in-out">
+      <div className="flex flex-col items-center justify-center gap-4 p-5 rounded-lg  mt-10 ">
+        <div className="flex flex-col items-left p-4 justify-center bg-blue-950  rounded-lg hover:shadow-lg sm:w-[20rem] hover:scale-105 transition-all duration-500 ease-in-out">
           <div className="flex items-center gap-4">
             <img
               src={testimonials[ind].image}
@@ -84,10 +84,16 @@ function Testimonial() {
         </div>
 
         <div className="flex gap-4 mt-4">
-          <button onClick={prevTestimonial} className="btn btn-sm btn-outline">
+          <button
+            onClick={prevTestimonial}
+            className="btn-sm btn bg-lime-500 hover:bg-lime-800"
+          >
             ← Prev
           </button>
-          <button onClick={nextTestimonial} className="btn btn-sm btn-outline">
+          <button
+            onClick={nextTestimonial}
+            className="btn btn-sm bg-lime-500 hover:bg-lime-800"
+          >
             Next →
           </button>
         </div>
@@ -97,7 +103,7 @@ function Testimonial() {
             <span
               key={i}
               className={`w-3 h-3 rounded-full ${
-                i === ind ? "bg-secondary" : "bg-white opacity-30"
+                i === ind ? " bg-lime-500 " : "bg-white opacity-30"
               }`}
             ></span>
           ))}

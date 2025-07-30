@@ -352,7 +352,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="flex items-center justify-between shadow-md top-0 sticky bg-gradient-to-tl from-lime-300 to-lime-900 py-2 z-50 ">
+    <header className="flex items-center justify-between shadow-md top-0 sticky bg-[#040a21] py-2 z-50 ">
       <img src={logo} alt="logo" className="w-24 h-auto" />
 
       <button
@@ -393,16 +393,17 @@ const Header = () => {
       >
         <ul className="flex flex-col md:flex-row text-md capitalize gap-3 relative">
           <li
-            className="hover:bg-blue-500 p-2 rounded-2xl relative z-10 hover:scale-105 hover:translate-1 transition-transform duration-300"
+            className=" p-2 rounded-2xl relative z-10 hover:scale-105 hover:translate-1 
+            transition-transform duration-300"
             onMouseOver={() => setHoveredMenu("features")}
           >
             <a href="#">features</a>
             {hoveredMenu === "features" && (
-              <div className="absolute top-full left-0 bg-blue-900 shadow rounded p-3 text-sm z-50 w-full md:w-[25rem] mt-2 ">
+              <div className="absolute top-full left-0 bg-[#040a21]  cursor-pointer  shadow rounded  text-sm z-50 w-full md:w-[25rem] mt-2 ">
                 {features.map((feature, index) => (
                   <article
                     key={index}
-                    className="flex items-center gap-3 p-2 hover:scale-105 hover:translate-1 transition-transform duration-300"
+                    className="flex items-center gap-3 p-4 hover:scale-105 hover:translate-1 transition-transform duration-300 hover:bg-[#1b2857] "
                     onMouseOut={() => setHoveredMenu(null)}
                   >
                     <div>{feature.icon}</div>
@@ -419,16 +420,16 @@ const Header = () => {
           </li>
 
           <li
-            className="hover:bg-blue-500 p-2 rounded-2xl relative z-1 hover:scale-105 hover:translate-1 transition-transform duration-300"
+            className=" p-2 rounded-2xl relative z-1 hover:scale-105 hover:translate-1 transition-transform duration-300 "
             onMouseOver={() => setHoveredMenu("supported")}
           >
             <a href="#">supported businesses</a>
             {hoveredMenu === "supported" && (
-              <div className="absolute top-full left-0 bg-blue-900 shadow rounded p-3 text-sm z-20 w-full md:w-[25rem] mt-2 overflow-y-scroll overflow-x-hidden h-[20rem]  ">
+              <div className="absolute top-full left-0 bg-[#040a21] cursor-pointer  shadow rounded text-sm z-20 w-full md:w-[25rem] mt-2  overflow-x-hidden h-[20rem]  ">
                 {supportedBusinesses.map((item, index) => (
                   <article
                     key={index}
-                    className="flex items-center gap-3 p-2 hover:scale-105 hover:translate-1 transition-transform duration-300"
+                    className="flex items-center gap-3 p-2 hover:scale-105 hover:translate-1 transition-transform duration-300 hover:bg-[#1b2857]"
                     onMouseOut={() => setHoveredMenu(null)}
                   >
                     <div>{item.icon}</div>
@@ -444,19 +445,19 @@ const Header = () => {
             )}
           </li>
 
-          <li className="hover:bg-blue-500 p-2 rounded-2xl  z-1hover:scale-105 hover:translate-1 transition-transform duration-300">
+          <li className=" p-2 rounded-2xl z-1hover:scale-105 hover:translate-1 transition-transform duration-300 ">
             <a href="#">pricing</a>
           </li>
         </ul>
 
         <ul className="w-full md:w-auto flex flex-col md:flex-row text-md md:items-center capitalize gap-3">
-          <li className="hover:bg-blue-500 p-2 rounded-2xl relative  hover:scale-105 hover:translate-1 transition-transform duration-300">
+          <li className=" p-2 rounded-2xl relative  hover:scale-105 hover:translate-1 transition-transform duration-300">
             <a href="#my_modal">login</a>
           </li>
-          <li className="btn btn-secondary text-white rounded">
+          <li className="btn bg-[#1b2857] hover:bg-[#1b2880] text-white rounded">
             <a href="#my_modal">join wait list</a>
           </li>
-          <li className="btn btn-ghost text-white rounded">
+          <li className="btn hov text-white rounded">
             <a href="#">download</a>
           </li>
         </ul>
@@ -482,14 +483,19 @@ const Header = () => {
               />
             </div>
             <div className="form-control mt-4">
-              <button type="submit" className="btn btn-primary w-full">
+              <button
+                type="submit"
+                className="btn capitalize  border-transparent hover:bg-lime-600
+                bg-lime-500
+                hover:text-accent-content"
+              >
                 Login
               </button>
             </div>
           </form>
 
           <div className="modal-action">
-            <a href="#" className="btn">
+            <a href="#" className="btn btn-ghost">
               Close
             </a>
           </div>

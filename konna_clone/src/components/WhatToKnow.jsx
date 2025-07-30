@@ -65,7 +65,7 @@ const WhatToKnow = () => {
         <h1 className="text-3xl mb-6 md:text-center lg:text-4xl transition-transform ease-in-out duration-300">
           What you can do with Konna
         </h1>
-        <ul className="bg-[url('/endless-constellation.svg')] bg-gradient-to-tl from-lime-300 to-lime-600 bg-repeat  w-full rounded-md  p-4 flex flex-col justify-stretch gap-6 md:flex-row flex-wrap ">
+        <ul className="  w-full rounded-md  p-4 flex flex-col justify-stretch gap-6 md:flex-row flex-wrap ">
           {whatWorks.map((feature, index) => (
             <li
               key={index}
@@ -86,12 +86,12 @@ const WhatToKnow = () => {
         <article className="md:flex-row flex flex-col items-center justify-between gap-3 ">
           <div className="md:card text-primary-content  md:w-[30rem]">
             <div className="card-body space-y-3">
-              <h2 className="card-title text-amber-500 text-2xl">
+              <h2 className="card-title text-[#c47b54] text-2xl">
                 POINT OF SALE(POS) SYSTEM
               </h2>
               <h3 className="text-xl">
                 Electrify your Retail Operations <br /> with{" "}
-                <span className="text-amber-500">Our Modern POS Suite</span>
+                <span className="text-[#c47b54]">Our Modern POS Suite</span>
               </h3>
               <p>
                 Optimize all your daily retail operations with our simplified
@@ -101,7 +101,11 @@ const WhatToKnow = () => {
                 your future business projections
               </p>
               <div className="card-actions justify-end">
-                <button className="btn w-full capitalize btn-outline border-amber-500 text-amber-500">
+                <button
+                  className="btn w-full capitalize border-transparent  hover:bg-lime-600
+                bg-lime-500
+                hover:text-accent-content"
+                >
                   get Started
                 </button>
               </div>
@@ -112,7 +116,7 @@ const WhatToKnow = () => {
           </div>
         </article>
       </section>
-      <section className="w-5/6  mx-auto my-10 p-2 bg-gradient-to-tl from-lime-300 to-lime-600 py-7 rounded-2xl ">
+      <section className="w-5/6  mx-auto my-10 p-2 bg-[#c47b54] py-7 rounded-2xl ">
         <article className="md:flex-row flex flex-col items-center justify-between gap-3 ">
           <div className=" card text-primary-content sm:w-[30rem]">
             <div className="card-body space-y-3">
@@ -122,7 +126,8 @@ const WhatToKnow = () => {
               <h3 className="text-xl text-balance">
                 Unleash the AI advantage in business analytics by
                 <br />
-                Turning<span className="text-blue-950">Data into Decision</span>
+                Turning
+                <span className="text-blue-950 pl-1">Data into Decision</span>
               </h3>
               <p>
                 Our AI-feature will accurately identify a product from its
@@ -134,7 +139,11 @@ const WhatToKnow = () => {
                 without incuring a loss
               </p>
               <div className="card-actions justify-end">
-                <button className="btn w-full capitalize btn-outline border-blue-950 text-blueborder-blue-950 hover:bg-blueborder-blue-950 hover:text-white">
+                <button
+                  className="btn w-full capitalize border-transparent  hover:bg-lime-600
+                bg-lime-500
+                hover:text-accent-content"
+                >
                   try now
                 </button>
               </div>
@@ -151,7 +160,7 @@ const WhatToKnow = () => {
             <div className="card-body space-y-3">
               <h3 className="text-xl">
                 Your Own Online Store is <br /> with{" "}
-                <span className="text-yellow-400">Just a Few Clicks Away</span>
+                <span className="text-[#c47b54]">Just a Few Clicks Away</span>
               </h3>
               <p>
                 Create a customized online store that helps you reach out to
@@ -159,7 +168,11 @@ const WhatToKnow = () => {
                 forms forms, and grow your business.
               </p>
               <div className="card-actions justify-end">
-                <button className="btn w-full capitalize btn-outline border-primary text-yellow-400 hover:bg-yellow-400 hover:text-accent-content">
+                <button
+                  className="btn w-full capitalize btn-outline border-primary  hover:bg-lime-600
+                bg-lime-500
+                hover:text-accent-content"
+                >
                   Create online shop
                 </button>
               </div>
@@ -174,12 +187,12 @@ const WhatToKnow = () => {
         <article className="md:flex-row flex flex-col items-center justify-between gap-3 ">
           <div className=" card text-primary-content sm:w-[30rem]">
             <div className="card-body space-y-3">
-              <h2 className="card-title text-amber-500 text-2xl">
+              <h2 className="card-title text-[#c47b54] text-2xl">
                 OFFLINE STORE
               </h2>
               <h3 className="text-xl text-balance">
                 Do you Know you Can
-                <span className="text-amber-500">Sell Offline?</span>
+                <span className="text-[#c47b54] p-1">Sell Offline?</span>
               </h3>
               <p>
                 Your business can still sell even when your connection has a
@@ -189,7 +202,11 @@ const WhatToKnow = () => {
                 2. Sync later when you find a connection.
               </p>
               <div className="card-actions justify-end">
-                <button className="btn w-full capitalize btn-outline border-amber-500 text-amber-500 hover:bg-amber-500 hover:text-accent-content">
+                <button
+                  className="btn w-full border-transparent capitalize   hover:bg-lime-600
+                bg-lime-500
+                hover:text-accent-content"
+                >
                   start selling offline
                 </button>
               </div>

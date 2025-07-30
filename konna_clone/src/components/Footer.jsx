@@ -3,7 +3,7 @@ import logo from "../assets/logo.svg";
 const FooterPage = () => {
   return (
     <div>
-      <footer className="footer w-full bg-yellow-950">
+      <footer className="footer w-full bg-[#1b2857]">
         <div className="w-5/6 mx-auto py-4 ">
           <div className="w-full flex flex-col md:flex-row items-start justify-between gap-4 py-5 border-b-1 border-amber-500 p-4 ">
             <article>
@@ -15,14 +15,18 @@ const FooterPage = () => {
                 update
               </p>
             </article>
-            <form className="flex items-center  justify-between  bg-amber-500 rounded w-full md:w-1/2 lg:w1/3">
+            <form className="flex items-center  justify-between rounded w-full md:w-1/2 lg:w1/3">
               <input
                 type="email"
                 name="email"
                 id=""
                 className="w-full bg-amber-50 p-2"
               />
-              <button className="btn btn-secondary text-white rounded">
+              <button
+                className="btn  capitalize  border-transparent  hover:bg-lime-600
+                bg-lime-500
+                hover:text-accent-content"
+              >
                 Subscribe
               </button>
             </form>
@@ -30,7 +34,7 @@ const FooterPage = () => {
           <div className="w-full flex flex-col md:flex-row items-start justify-between gap-4 my-5">
             <div>
               <img src={logo} alt="logo" />
-              <p className="text-white text-md cursor-pointer">
+              <p className="text-blue-400 text-md cursor-pointer">
                 The one-stop-solution to business growth
               </p>
             </div>

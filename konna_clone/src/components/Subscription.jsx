@@ -104,7 +104,7 @@ const Subscription = () => {
           <p className="text-gray-600 text-base leading-relaxed">
             Choose a subscription plan that fits your budget to have unlimited
             access to all the features.
-            <span className="font-semibold text-green-600">
+            <span className="font-semibold text-lime-500">
               {" "}
               Save up to NGN 8000
             </span>{" "}
@@ -123,7 +123,7 @@ const Subscription = () => {
               name="currency"
               value={currency}
               onChange={(e) => setCurrency(e.target.value)}
-              className="h-10 px-4 rounded-lg border border-gray-300 text-amber-50 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="h-10 px-4 rounded-lg border border-gray-300  bg-base-100 text-amber-50 focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               <option value="NGN">NG Naira</option>
               <option value="USD">US Dollar</option>
@@ -136,7 +136,7 @@ const Subscription = () => {
             <span
               className={`cursor-pointer px-3 py-1 rounded-full ${
                 billingCycle === "monthly"
-                  ? "bg-primary text-white"
+                  ? "bg-lime-600 text-white"
                   : "bg-base-300"
               }`}
               onClick={() => setBillingCycle("monthly")}
@@ -146,7 +146,7 @@ const Subscription = () => {
             <span
               className={`cursor-pointer px-3 py-1 rounded-full ${
                 billingCycle === "yearly"
-                  ? "bg-primary text-white"
+                  ? "bg-lime-600 text-white"
                   : "bg-base-300"
               }`}
               onClick={() => setBillingCycle("yearly")}
@@ -157,7 +157,7 @@ const Subscription = () => {
         </div>
 
         <h2 className="text-xl">Subscription Plans</h2>
-        <div className="flex flex-col items-center justify-center md:flex-row flex-wrap mt-10 gap-5">
+        <div className="flex flex-col items-center justify-center md:flex-row flex-wrap mt-10 gap-5 ">
           {plans.map((plan, index) => (
             <motion.div
               key={index}
@@ -165,11 +165,11 @@ const Subscription = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="card w-80 shadow-sm hover:scale-105 transition-all duration-300 hover:bg-green-400 bg-gradient-to-tl from-lime-300 to-lime-600"
+              className="card w-80 shadow-sm hover:scale-105 transition-all duration-300 bg-[#1b2857] "
             >
               <div className="card-body">
                 {plan.isPopular && (
-                  <span className="badge badge-xs badge-warning mb-2">
+                  <span className="badge badge-xs bg-[#c47b54] mb-2">
                     Most Popular
                   </span>
                 )}
@@ -220,7 +220,11 @@ const Subscription = () => {
                   ))}
                 </ul>
                 <div className="mt-6">
-                  <button className="btn bg-blue-950 btn-block">
+                  <button
+                    className="btn btn-block capitalize border-transparent  hover:bg-lime-600
+                bg-lime-500
+                hover:text-accent-content"
+                  >
                     Subscribe
                   </button>
                 </div>

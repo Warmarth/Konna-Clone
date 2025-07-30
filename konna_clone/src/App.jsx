@@ -10,7 +10,7 @@ import WhatToKnow from "./components/WhatToKnow.jsx";
 
 function App() {
   return (
-    <main className="">
+    <main className="bg-[#040a21]">
       <Header />
       <Hero />
       <WhatToKnow />

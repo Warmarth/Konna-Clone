@@ -110,7 +110,7 @@ const HowItworks = () => {
                 className="flex items-center mx-auto  justify-between"
               >
                 <img src={step.image} width={50} alt={step.title} />
-                <span className="bg-primary px-3 py-1 rounded-lg ">
+                <span className="btn bg-blue-950 hover:bg-lime-500 px-3 py-1 rounded-lg ">
                   step {index + 1}
                 </span>
               </motion.div>
@@ -126,12 +126,12 @@ const HowItworks = () => {
           <img src={her} alt=" her" />
         </div>
         <div className="text-left  p-4 md:3/4 ">
-          <h1 className="text-2xl text-primary font-bold uppercase mb-4">
+          <h1 className="text-2xl text-[#c47b54] font-bold uppercase mb-4">
             multiple payment method
           </h1>
           <h2 className="font-bold text-xl mb-2">
             Accept Multiple Payment
-            <span className=" text-emerald-600 mx-1 ">Options</span>
+            <span className=" text-lime-500 mx-1 ">Options</span>
           </h2>
           <p className=" text-gray-300  ">
             Receive payments with various payment options convenient for your
@@ -161,12 +161,18 @@ const HowItworks = () => {
         </div>
       </section>
 
-      <section className=" bg-primary w-5/6  mx-auto flex  flex-col items-center justify-center text-center space-y-5 p-10 text-white rounded-2xl">
+      <section className="  w-5/6  mx-auto flex  flex-col items-center justify-center text-center space-y-5 p-10 text-white rounded-2xl">
         <article>
           <h2 className="text-2xl mb-1.5">What are You Waiting for?</h2>
           <p>Manage your business Online/Offline with/without internet</p>
         </article>
-        <button className="btn btn-secondary px-7">Get Started</button>
+        <button
+          className="btn capitalize border-transparent  hover:bg-lime-600
+                bg-lime-500
+                hover:text-accent-content"
+        >
+          Get Started
+        </button>
         <div className="flex flex-wrap justify-center gap-5 mt-5">
           {downlodLink.map((link, index) => (
             <div
