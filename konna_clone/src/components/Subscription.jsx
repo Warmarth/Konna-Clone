@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-
 const Subscription = () => {
   const [billingCycle, setBillingCycle] = useState("monthly");
   const [currency, setCurrency] = useState("USD");
@@ -160,14 +159,14 @@ const Subscription = () => {
         <h2 className="text-xl">Subscription Plans</h2>
         <div className="flex flex-col items-center justify-center md:flex-row flex-wrap mt-10 gap-5">
           {plans.map((plan, index) => (
-          <motion.div
-  key={index}
-  initial={{ opacity: 0, y: 30 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.5, delay: index * 0.1 }}
-  viewport={{ once: true }}
-  className="card w-80 shadow-sm hover:scale-105 transition-all duration-300 hover:bg-green-400 bg-gradient-to-bl from-5% to-secondary"
->
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              className="card w-80 shadow-sm hover:scale-105 transition-all duration-300 hover:bg-green-400 bg-gradient-to-tl from-lime-300 to-lime-600"
+            >
               <div className="card-body">
                 {plan.isPopular && (
                   <span className="badge badge-xs badge-warning mb-2">
@@ -221,7 +220,7 @@ const Subscription = () => {
                   ))}
                 </ul>
                 <div className="mt-6">
-                  <button className="btn btn-primary btn-block">
+                  <button className="btn bg-blue-950 btn-block">
                     Subscribe
                   </button>
                 </div>

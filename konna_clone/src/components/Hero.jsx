@@ -30,12 +30,12 @@ function Hero() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="w-5/6 mx-auto text-center space-y-5 my-10 bg-gradient-to-tl to-secondary  rounded-xl p-6"
+        className="w-5/6 mx-auto text-center space-y-5 my-10 bg-gradient-to-tl from-lime-300 to-lime-600 rounded-xl p-6"
       >
         <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl transition-transform duration-300 ">
           Unlocking Business Growth
         </h1>
-        <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl text-amber-400 capitalize">
+        <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl text-base-200 font-bold font-sans capitalize">
           Your all-in-one-solution
         </h2>
 
@@ -43,7 +43,7 @@ function Hero() {
           the most reliable to manage stock and track sales. Take your business
           to global and let the world know your trade
         </p>
-        <button className="btn md:px-[7rem] py-[2rem] btn-info capitalize text-xl ">
+        <button className="btn md:px-[7rem] py-[2rem] bg-blue-950 capitalize text-xl ">
           join wait list
         </button>
         <div className="flex flex-wrap justify-center gap-5 mt-5">

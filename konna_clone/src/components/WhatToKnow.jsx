@@ -112,17 +112,17 @@ const WhatToKnow = () => {
           </div>
         </article>
       </section>
-      <section className="w-5/6  mx-auto my-10 p-2 bg-gradient-to-bl from-5% to-secondary py-7 rounded-2xl ">
+      <section className="w-5/6  mx-auto my-10 p-2 bg-gradient-to-tl from-lime-300 to-lime-600 py-7 rounded-2xl ">
         <article className="md:flex-row flex flex-col items-center justify-between gap-3 ">
           <div className=" card text-primary-content sm:w-[30rem]">
             <div className="card-body space-y-3">
-              <h2 className="card-title text-teal-500 text-2xl">
+              <h2 className="card-title text-blue-950 text-2xl">
                 AI-POWERED BUSINESS ANALYTICS
               </h2>
               <h3 className="text-xl text-balance">
                 Unleash the AI advantage in business analytics by
                 <br />
-                Turning<span className="text-teal-500">Data into Decision</span>
+                Turning<span className="text-blue-950">Data into Decision</span>
               </h3>
               <p>
                 Our AI-feature will accurately identify a product from its
@@ -134,7 +134,7 @@ const WhatToKnow = () => {
                 without incuring a loss
               </p>
               <div className="card-actions justify-end">
-                <button className="btn w-full capitalize btn-outline border-teal-500 text-teal-500 hover:bg-teal-500 hover:text-accent-content">
+                <button className="btn w-full capitalize btn-outline border-blue-950 text-blueborder-blue-950 hover:bg-blueborder-blue-950 hover:text-white">
                   try now
                 </button>
               </div>

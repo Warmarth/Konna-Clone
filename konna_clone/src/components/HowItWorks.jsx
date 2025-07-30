@@ -87,9 +87,9 @@ const HowItworks = () => {
   ];
   return (
     <div className=" my-10">
-      <section className="flex flex-col items-center justify-center text-center space-y-2 p-10 bg-gradient-to-bl from-5% to-secondary text-white mx-auto">
+      <section className="flex flex-col items-center justify-center text-center space-y-2 p-10 bg-gradient-to-tl from-lime-300 to-lime-600 text-white mx-auto">
         <article className="normal-case mb-10">
-          <h1 className="text-4xl text-primary">How It Works</h1>
+          <h1 className="text-4xl text-blue-950">How It Works</h1>
           <p>How to Get started</p>
         </article>
         <div className="flex gap-5 flex-wrap transition-all duration-500 justify-center items-center flex-auto flex-shrink-0">
@@ -100,7 +100,7 @@ const HowItworks = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="p-4 w-[15rem] h-[12rem] border-2 rounded-2xl border-gray-200 text-left hover:scale-110 transition-all duration-300 hover:bg-white hover:text-black shadow-lg"
+              className="p-4 w-[15rem] h-[12rem] border-2 rounded-2xl border-gray-200 text-left hover:scale-110 transition-all duration-300 hover:bg-blue-950  shadow-lg"
             >
               <motion.div
                 initial={{ x: -50, opacity: 0 }}
