@@ -18,9 +18,9 @@ const FooterPage = () => {
                 type="email"
                 name="email"
                 id=""
-                className="w-full bg-[#4f5d6f] p-2"
+                className="w-full bg-[#4f5d6f] p-2 in-focus:border-[#1970e8] text-[#e3e3f0] outline-0"
               />
-              <button className=" capitalize   btn  text-white border-transparent bg-[#1970e8]">
+              <button className=" capitalize   btn  text-[#fff] border-transparent bg-[#1970e8] ">
                 Subscribe
               </button>
             </form>

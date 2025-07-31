@@ -79,8 +79,11 @@ const Accordion = () => {
               </div>
             ))}
           </div>
-          <button className="btn text-[#1970e8] border-[#1970e8] bg-transparent"
-            onClick={handleViewMore}>{viewMore ? "View Less" : "View More"}
+          <button
+            className="btn text-[#1970e8] border-[#1970e8] bg-transparent  "
+            onClick={handleViewMore}
+          >
+            {viewMore ? "View Less" : "View More"}
           </button>
         </div>
       </div>
