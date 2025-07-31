@@ -352,11 +352,10 @@ const Header = () => {
   ];
 
   return (
-    <header className="flex items-center justify-between shadow-md top-0 sticky bg-[#040a21] py-2 z-50 ">
-      <img src={logo} alt="logo" className="w-24 h-auto" />
-
+    <header className="flex items-center justify-between shadow-md top-0 sticky bg-[#040a21] px-3 py-2 z-50 ">
+      <img src={logo} alt="logo" className="w-24 h-auto " />
       <button
-        className="md:hidden btn border-e-primary z-10"
+        className="md:hidden btn bg-transparent border-transparent z-10"
         onClick={toggleMenu}
       >
         {menuOpen ? (
@@ -386,7 +385,7 @@ const Header = () => {
         className={`flex flex-col md:flex-row md:relative w-full md:bg-transparent md:translate-y-0 md:items-center md:justify-evenly space-y-0 space-x-3
           ${
             menuOpen
-              ? "absolute top-0 left-0 p-2 translate-y-10 bg-blue-950 space-y-3"
+              ? "absolute top-0 left-0 p-2 translate-y-10 bg-[#040a21] space-y-3"
               : "hidden md:flex"
           }
         `}
@@ -425,7 +424,7 @@ const Header = () => {
           >
             <a href="#">supported businesses</a>
             {hoveredMenu === "supported" && (
-              <div className="absolute top-full left-0 bg-[#040a21] cursor-pointer  shadow rounded text-sm z-20 w-full md:w-[25rem] mt-2  overflow-x-hidden h-[20rem]  ">
+              <div className="absolute top-full left-0 bg-[#040a21] cursor-pointer  shadow rounded text-sm z-10 w-full md:w-[25rem] mt-2  overflow-x-hidden h-[20rem] ">
                 {supportedBusinesses.map((item, index) => (
                   <article
                     key={index}
@@ -445,7 +444,7 @@ const Header = () => {
             )}
           </li>
 
-          <li className=" p-2 rounded-2xl z-1hover:scale-105 hover:translate-1 transition-transform duration-300 ">
+          <li className=" p-2 rounded-2xl z-1 hover:scale-105 hover:translate-1 transition-transform duration-300 ">
             <a href="#">pricing</a>
           </li>
         </ul>
@@ -454,10 +453,10 @@ const Header = () => {
           <li className=" p-2 rounded-2xl relative  hover:scale-105 hover:translate-1 transition-transform duration-300">
             <a href="#my_modal">login</a>
           </li>
-          <li className="btn bg-[#1b2857] hover:bg-[#1b2880] text-white rounded">
+          <li className="btn bg-[#0061e6] text-white rounded">
             <a href="#my_modal">join wait list</a>
           </li>
-          <li className="btn hov text-white rounded">
+          <li className="btn hov bg-transparent border-[#0061e6] text-[#0061e6] rounded">
             <a href="#">download</a>
           </li>
         </ul>

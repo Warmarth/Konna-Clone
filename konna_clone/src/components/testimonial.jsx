@@ -55,18 +55,20 @@ function Testimonial() {
   }, []);
 
   return (
-    <div className="bg-gradient-to-tl  text-white p-10 ">
+    <div className="bg-gradient-to-tl   p-10 ">
       <article className="flex flex-col items-center justify-center text-center space-y-2">
-        <h1 className="text-2xl font-bold">Testimonial</h1>
-        <h2 className="font-semibold text-4xl">Hear from our Customers</h2>
-        <p className="text-lg w-3/4">
+        <h1 className="text-2xl font-semibold text-[#1970e8]">
+          Our testimonial
+        </h1>
+        <h2 className="font-semibold text-2xl">Hear from our Customers</h2>
+        <p className=" w-3/4 text-[#516980]">
           Here is the feedback from our clients regarding their experiences
           using Konna for their business management.
         </p>
       </article>
 
       <div className="flex flex-col items-center justify-center gap-4 p-5 rounded-lg  mt-10 ">
-        <div className="flex flex-col items-left p-4 justify-center bg-blue-950  rounded-lg hover:shadow-lg sm:w-[20rem] hover:scale-105 transition-all duration-500 ease-in-out">
+        <div className="flex flex-col items-left p-4 justify-center bg-[#1b2136]  rounded-lg hover:shadow-lg sm:w-[20rem] hover:scale-105 transition-all duration-500 ease-in-out">
           <div className="flex items-center gap-4">
             <img
               src={testimonials[ind].image}
@@ -74,25 +76,29 @@ function Testimonial() {
               className="w-14 h-14 rounded-full"
             />
             <article>
-              <h3 className="text-xl font-semibold">
+              <h3 className="text-xl font-semibold ">
                 {testimonials[ind].name}
               </h3>
-              <p className="text-sm italic">{testimonials[ind].designation}</p>
+              <p className="text-sm italic text-[#1970e8]">
+                {testimonials[ind].designation}
+              </p>
             </article>
           </div>
-          <p className="text-base mt-2">{testimonials[ind].feedback}</p>
+          <p className="text-base mt-2 text-[#516980]">
+            {testimonials[ind].feedback}
+          </p>
         </div>
 
         <div className="flex gap-4 mt-4">
           <button
             onClick={prevTestimonial}
-            className="btn-sm btn bg-lime-500 hover:bg-lime-800"
+            className="btn btn-sm text-[#1970e8] border-[#1970e8] bg-transparent"
           >
             ← Prev
           </button>
           <button
             onClick={nextTestimonial}
-            className="btn btn-sm bg-lime-500 hover:bg-lime-800"
+            className="btn btn-sm text-[#1970e8] border-[#1970e8] bg-transparent"
           >
             Next →
           </button>
@@ -103,7 +109,7 @@ function Testimonial() {
             <span
               key={i}
               className={`w-3 h-3 rounded-full ${
-                i === ind ? " bg-lime-500 " : "bg-white opacity-30"
+                i === ind ? " bg-[#1970e8] " : "bg-white opacity-30"
               }`}
             ></span>
           ))}

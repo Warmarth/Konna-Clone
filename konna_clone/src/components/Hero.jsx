@@ -35,15 +35,15 @@ function Hero() {
         <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl transition-transform duration-300 ">
           Unlocking Business Growth
         </h1>
-        <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl text-[#c47b54] font-bold font-sans capitalize">
+        <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl text-[#fea316] font-bold font-sans capitalize">
           Your all-in-one-solution
         </h2>
 
-        <p className=" mx-auto md:w-md lg:w-2xl">
+        <p className=" mx-auto md:w-md lg:w-2xl text-[#6b7280]">
           the most reliable to manage stock and track sales. Take your business
           to global and let the world know your trade
         </p>
-        <button className="btn md:px-[7rem] py-[2rem] bg-lime-500 hover:bg-lime-800  capitalize text-xl ">
+        <button className="btn md:px-[7rem] py-[2rem] bg-[#0061e6]  capitalize text-xl ">
           join wait list
         </button>
         <div className="flex flex-wrap justify-center gap-5 mt-5">
@@ -66,7 +66,7 @@ function Hero() {
         <div>
           <img src={Heros} alt="heros" />
         </div>
-        <div className=" bg-[#c47b54] px-[2rem]lg:py-[5rem] md:-translate-y-15.5 lg:-translate-y-17.5 transition-all duration-300 ">
+        <div className=" bg-[#0061e6] px-[2rem]lg:py-[5rem] md:-translate-y-15.5 lg:-translate-y-17.5 transition-all duration-300 ">
           <div className=" flex flex-col justify-center lg:flex-row lg:space-y-0 ">
             <article className="bg  p-3 ">
               <h2 className="text-4xl font-semibold lg:text-5xl ">
@@ -77,11 +77,11 @@ function Hero() {
               </p>
             </article>
             <div className=" sm:flex  items-center justify-start gap-10 p-4  space-y-3 ">
-              <p className="capitalize w-58 px-4 py-2 rounded-xl text-xl bg-[#1b2857]  ">
+              <p className="capitalize w-58 px-4 py-2 rounded-xl text-xl bg-[#1970e8]  ">
                 <span className="block lg:text-6xl text-5xl">100+</span>
                 business <br /> worldwide
               </p>
-              <p className="capitalize w-58 py-3 rounded-xl text-xl  bg-[#1b2857] px-4">
+              <p className="capitalize w-58 py-3 rounded-xl text-xl  bg-[#1970e8] px-4">
                 <span className="block text-5xl lg:text-6xl">10k+</span>
                 trusted customers
               </p>

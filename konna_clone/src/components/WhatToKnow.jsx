@@ -73,8 +73,8 @@ const WhatToKnow = () => {
             >
               <img src={good} width={30} alt="good" />
               <div className=" space-y-2 ">
-                <h2 className=" text-lg text-blue-600">{feature.title}</h2>
-                <p className="text-sm text-gray-400 text-balance antialiased">
+                <h2 className=" text-lg">{feature.title}</h2>
+                <p className="text-sm text-[#6b7280] text-balance antialiased">
                   {feature.description}
                 </p>
               </div>
@@ -82,16 +82,17 @@ const WhatToKnow = () => {
           ))}
         </ul>
       </section>
-      <section className="w-5/6  mx-auto my-10 p-2 ">
+
+      <section className=" mx-auto p-2 py-10 bg-[#0e1329] ">
         <article className="md:flex-row flex flex-col items-center justify-between gap-3 ">
           <div className="md:card text-primary-content  md:w-[30rem]">
             <div className="card-body space-y-3">
-              <h2 className="card-title text-[#c47b54] text-2xl">
+              <h2 className="card-title text-[#f59e17] text-2xl">
                 POINT OF SALE(POS) SYSTEM
               </h2>
               <h3 className="text-xl">
                 Electrify your Retail Operations <br /> with{" "}
-                <span className="text-[#c47b54]">Our Modern POS Suite</span>
+                <span className="text-[#f59e17]">Our Modern POS Suite</span>
               </h3>
               <p>
                 Optimize all your daily retail operations with our simplified
@@ -102,32 +103,31 @@ const WhatToKnow = () => {
               </p>
               <div className="card-actions justify-end">
                 <button
-                  className="btn w-full capitalize border-transparent  hover:bg-lime-600
-                bg-lime-500
-                hover:text-accent-content"
+                  className="btn w-full capitalize border-[#f59e17]  text-[#f59e17] bg-transparent
+                "
                 >
                   get Started
                 </button>
               </div>
             </div>
           </div>
-          <div className=" flex items-center justify-center">
+          <div className=" flex items-center justify-center py-7">
             <img src={monitor} width={400} height={400} alt="" />
           </div>
         </article>
       </section>
-      <section className="w-5/6  mx-auto my-10 p-2 bg-[#c47b54] py-7 rounded-2xl ">
-        <article className="md:flex-row flex flex-col items-center justify-between gap-3 ">
+      <section className="  mx-auto  p-2 bg-[#1970e8] py-10  ">
+        <article className=" md:flex-row flex flex-col items-center justify-between gap-3 ">
           <div className=" card text-primary-content sm:w-[30rem]">
             <div className="card-body space-y-3">
-              <h2 className="card-title text-blue-950 text-2xl">
+              <h2 className="card-title text-[#8db2e2] text-2xl">
                 AI-POWERED BUSINESS ANALYTICS
               </h2>
-              <h3 className="text-xl text-balance">
+              <h3 className="text-xl text-balance ">
                 Unleash the AI advantage in business analytics by
                 <br />
                 Turning
-                <span className="text-blue-950 pl-1">Data into Decision</span>
+                <span className="text-[#f59e17] pl-1">Data into Decision</span>
               </h3>
               <p>
                 Our AI-feature will accurately identify a product from its
@@ -140,9 +140,8 @@ const WhatToKnow = () => {
               </p>
               <div className="card-actions justify-end">
                 <button
-                  className="btn w-full capitalize border-transparent  hover:bg-lime-600
-                bg-lime-500
-                hover:text-accent-content"
+                  className="btn border-white w-full capitalize 
+                bg-transparent"
                 >
                   try now
                 </button>
@@ -154,13 +153,13 @@ const WhatToKnow = () => {
           </div>
         </article>
       </section>
-      <section className="w-5/6  mx-auto my-10 p-2 bg-gradient-to-bl from-10% to-primary rounded-2xl py-7">
+      <section className="  mx-auto  p-2 py-10">
         <article className="md:flex-row flex flex-col items-center justify-between gap-3 ">
           <div className=" card text-primary-content sm:w-[30rem]">
             <div className="card-body space-y-3">
-              <h3 className="text-xl">
+              <h3 className="text-xl ">
                 Your Own Online Store is <br /> with{" "}
-                <span className="text-[#c47b54]">Just a Few Clicks Away</span>
+                <span className="text-[#1970e8]">Just a Few Clicks Away</span>
               </h3>
               <p>
                 Create a customized online store that helps you reach out to
@@ -168,31 +167,27 @@ const WhatToKnow = () => {
                 forms forms, and grow your business.
               </p>
               <div className="card-actions justify-end">
-                <button
-                  className="btn w-full capitalize btn-outline border-primary  hover:bg-lime-600
-                bg-lime-500
-                hover:text-accent-content"
-                >
+                <button className="btn w-full capitalize btn-outline border-transparent text-[#1970e8] bg-[#1b2857]">
                   Create online shop
                 </button>
               </div>
             </div>
           </div>
           <div className=" flex items-center justify-center">
-            <img src={online} width={400} height={400} alt="online" />
+            <img src={online} width={500} height={500} alt="online" />
           </div>
         </article>
       </section>
-      <section className="w-5/6  mx-auto my-10 p-2 bg-gradient-to-bl from-5% to-base  rounded-2xl">
+      <section className=" mx-auto  p-2 py-10 bg-[#0e1329]">
         <article className="md:flex-row flex flex-col items-center justify-between gap-3 ">
           <div className=" card text-primary-content sm:w-[30rem]">
             <div className="card-body space-y-3">
-              <h2 className="card-title text-[#c47b54] text-2xl">
+              <h2 className="card-title text-[#f59e17] text-2xl">
                 OFFLINE STORE
               </h2>
               <h3 className="text-xl text-balance">
                 Do you Know you Can
-                <span className="text-[#c47b54] p-1">Sell Offline?</span>
+                <span className="text-[#f59e17] p-1">Sell Offline?</span>
               </h3>
               <p>
                 Your business can still sell even when your connection has a
@@ -203,9 +198,8 @@ const WhatToKnow = () => {
               </p>
               <div className="card-actions justify-end">
                 <button
-                  className="btn w-full border-transparent capitalize   hover:bg-lime-600
-                bg-lime-500
-                hover:text-accent-content"
+                  className="btn w-full capitalize border-[#f59e17]  text-[#f59e17] bg-transparent
+                "
                 >
                   start selling offline
                 </button>
@@ -213,7 +207,7 @@ const WhatToKnow = () => {
             </div>
           </div>
           <div className=" flex items-center justify-center">
-            <img src={monitor2} width={400} height={400} alt="monitor2" />
+            <img src={monitor2} width={500} height={500} alt="monitor2" />
           </div>
         </article>
       </section>

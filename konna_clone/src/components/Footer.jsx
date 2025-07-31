@@ -3,14 +3,12 @@ import logo from "../assets/logo.svg";
 const FooterPage = () => {
   return (
     <div>
-      <footer className="footer w-full bg-[#1b2857]">
+      <footer className="footer w-full bg-[#10152b] text-[#4f5d6f]">
         <div className="w-5/6 mx-auto py-4 ">
-          <div className="w-full flex flex-col md:flex-row items-start justify-between gap-4 py-5 border-b-1 border-amber-500 p-4 ">
+          <div className="w-full flex flex-col md:flex-row items-start justify-between gap-4 py-5 border-b-1 border-[#4f5d6f] p-4 ">
             <article>
-              <h1 className="text-2xl text-white font-bold">
-                join our newsletter
-              </h1>
-              <p className="text-white text-md">
+              <h1 className="text-2xl text-white">join our newsletter</h1>
+              <p className=" text-md">
                 We’ll like to reach out to you whenever there is an important
                 update
               </p>
@@ -20,13 +18,9 @@ const FooterPage = () => {
                 type="email"
                 name="email"
                 id=""
-                className="w-full bg-amber-50 p-2"
+                className="w-full bg-[#4f5d6f] p-2"
               />
-              <button
-                className="btn  capitalize  border-transparent  hover:bg-lime-600
-                bg-lime-500
-                hover:text-accent-content"
-              >
+              <button className=" capitalize   btn  text-white border-transparent bg-[#1970e8]">
                 Subscribe
               </button>
             </form>
@@ -34,7 +28,7 @@ const FooterPage = () => {
           <div className="w-full flex flex-col md:flex-row items-start justify-between gap-4 my-5">
             <div>
               <img src={logo} alt="logo" />
-              <p className="text-blue-400 text-md cursor-pointer">
+              <p className=" text-md cursor-pointer">
                 The one-stop-solution to business growth
               </p>
             </div>
@@ -51,10 +45,7 @@ const FooterPage = () => {
                   "Business Analytics",
                   "Prices",
                 ].map((feature, idx) => (
-                  <li
-                    key={idx}
-                    className="text-blue-400 text-md cursor-pointer"
-                  >
+                  <li key={idx} className=" text-md cursor-pointer">
                     {feature}
                   </li>
                 ))}
@@ -67,10 +58,7 @@ const FooterPage = () => {
               <ul className="space-y-4">
                 {["About Us", "Contact Us", "Careers", "Blog"].map(
                   (company, idx) => (
-                    <li
-                      key={idx}
-                      className="text-blue-400 text-md cursor-pointer"
-                    >
+                    <li key={idx} className=" text-md cursor-pointer">
                       {company}{" "}
                     </li>
                   )
@@ -89,10 +77,7 @@ const FooterPage = () => {
                   "Agro-based products",
                   "See More",
                 ].map((business, idx) => (
-                  <li
-                    key={idx}
-                    className="text-blue-400 text-md cursor-pointer"
-                  >
+                  <li key={idx} className=" text-md cursor-pointer">
                     {business}
                   </li>
                 ))}
@@ -104,18 +89,15 @@ const FooterPage = () => {
               </p>
               <ul className="space-y-4">
                 {["Android", "iOS", "Windows"].map((download, idx) => (
-                  <li
-                    key={idx}
-                    className="text-blue-400 text-md cursor-pointer"
-                  >
+                  <li key={idx} className=" text-md cursor-pointer">
                     {download}
                   </li>
                 ))}
               </ul>
             </div>
           </div>
-          <div className="w-full flex flex-col md:flex-row items-start justify-between gap-5 md:p-4 mt-8 flex-wrap duration-300">
-            <div className=" flex items-start md:items-center justify-between border-t-1 border-amber-500  w-5/6 md:mx-auto flex-wrap ">
+          <div className="w-full flex flex-col md:flex-row items-start justify-between gap-5 md:p-4 mt-8 flex-wrap duration-300 text-white">
+            <div className=" flex items-start md:items-center justify-between border-t-1 border-[#4f5d6f] w-5/6 md:mx-auto flex-wrap ">
               <div className=" flex md:flex-row flex-col md:items-center items-start md:justify-center gap-5 py-4 ">
                 <p className="hover:cursor-pointer  hover:border-b-amber-200 hover:border-b-2 p-1 ">
                   © 2023 Konna App

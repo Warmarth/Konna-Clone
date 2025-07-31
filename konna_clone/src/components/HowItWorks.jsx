@@ -86,11 +86,11 @@ const HowItworks = () => {
     },
   ];
   return (
-    <div className=" my-10">
-      <section className="flex flex-col items-center justify-center text-center space-y-2 p-10 bg-gradient-to-tl from-lime-300 to-lime-600 text-white mx-auto">
+    <div className=" ">
+      <section className="flex flex-col items-center justify-center text-center space-y-2 p-10  text-white mx-auto">
         <article className="normal-case mb-10">
-          <h1 className="text-4xl text-blue-950">How It Works</h1>
-          <p>How to Get started</p>
+          <h1 className=" text-[#1970e8] text-xl">How It Works</h1>
+          <p className="text-3xl">How to Get started</p>
         </article>
         <div className="flex gap-5 flex-wrap transition-all duration-500 justify-center items-center flex-auto flex-shrink-0">
           {getStartedSteps.map((step, index) => (
@@ -100,7 +100,7 @@ const HowItworks = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="p-4 w-[15rem] h-[12rem] border-2 rounded-2xl border-gray-200 text-left hover:scale-110 transition-all duration-300 hover:bg-blue-950  shadow-lg"
+              className="p-4 w-[15rem] h-[12rem] bg-[#0e1329]  text-left hover:scale-110 transition-all duration-300  shadow-lg"
             >
               <motion.div
                 initial={{ x: -50, opacity: 0 }}
@@ -110,7 +110,7 @@ const HowItworks = () => {
                 className="flex items-center mx-auto  justify-between"
               >
                 <img src={step.image} width={50} alt={step.title} />
-                <span className="btn bg-blue-950 hover:bg-lime-500 px-3 py-1 rounded-lg ">
+                <span className="btn bg-[#1970e8] px-3 py-1 rounded-0 ">
                   step {index + 1}
                 </span>
               </motion.div>
@@ -126,12 +126,12 @@ const HowItworks = () => {
           <img src={her} alt=" her" />
         </div>
         <div className="text-left  p-4 md:3/4 ">
-          <h1 className="text-2xl text-[#c47b54] font-bold uppercase mb-4">
+          <h1 className="text-2xl text-[#1970e8] font-bold uppercase mb-4">
             multiple payment method
           </h1>
           <h2 className="font-bold text-xl mb-2">
             Accept Multiple Payment
-            <span className=" text-lime-500 mx-1 ">Options</span>
+            <span className="text-[#1970e8]  mx-1 ">Options</span>
           </h2>
           <p className=" text-gray-300  ">
             Receive payments with various payment options convenient for your
@@ -161,15 +161,16 @@ const HowItworks = () => {
         </div>
       </section>
 
-      <section className="  w-5/6  mx-auto flex  flex-col items-center justify-center text-center space-y-5 p-10 text-white rounded-2xl">
+      <section className="  w-5/6  mx-auto flex  flex-col items-center justify-center text-center space-y-5 p-10 bg-[#1970e8] rounded-xl">
         <article>
           <h2 className="text-2xl mb-1.5">What are You Waiting for?</h2>
           <p>Manage your business Online/Offline with/without internet</p>
         </article>
         <button
-          className="btn capitalize border-transparent  hover:bg-lime-600
-                bg-lime-500
-                hover:text-accent-content"
+          className="btn capitalize border-transparent
+          text-[#1970e8] 
+                bg-white
+                "
         >
           Get Started
         </button>
@@ -177,9 +178,14 @@ const HowItworks = () => {
           {downlodLink.map((link, index) => (
             <div
               key={index}
-              className="flex items-center gap-2  text-black px-4 py-2 rounded-lg hover:scale-105 transition-transform duration-300"
+              className="flex items-center gap-2  px-4 py-2 rounded-lg hover:scale-105 transition-transform duration-300"
             >
-              <img src={link.image} width={100} alt={link.title} />
+              <img
+                src={link.image}
+                width={100}
+                alt={link.title}
+                className="rounded-4xl border-white border"
+              />
             </div>
           ))}
         </div>

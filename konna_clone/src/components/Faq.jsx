@@ -53,16 +53,16 @@ const Accordion = () => {
 
   return (
     <div>
-      <div className="w-5/6 mx-auto my-10 lg:h-[100vh]">
-        <h1 className=" text-3xl font-bold mb-6 text-white">
+      <div className=" mx-auto py-10 px-3 lg:h-[100vh] bg-[#0e1329]">
+        <h1 className=" text-3xl font-bold mb-6 ">
           Frequently Asked Questions
         </h1>
 
-        <div className="flex flex-col items-center  shadow-lg rounded-lg p-2">
+        <div className="flex flex-col items-center  p-2">
           <div className="join join-vertical   ">
             {faq.map((faq, idx) => (
               <div key={idx} className="mb-4">
-                <div className="collapse collapse-plus join-item bg-[#1b2857] rounded-2xl">
+                <div className="collapse collapse-plus join-item bg-[#1b2136] rounded-2xl">
                   <input
                     type="checkbox"
                     className="peer"
@@ -79,13 +79,8 @@ const Accordion = () => {
               </div>
             ))}
           </div>
-          <button
-            className="btn capitalize border-transparent hover:bg-lime-600
-                bg-lime-500
-                hover:text-accent-content"
-            onClick={handleViewMore}
-          >
-            {viewMore ? "View Less" : "View More"}
+          <button className="btn text-[#1970e8] border-[#1970e8] bg-transparent"
+            onClick={handleViewMore}>{viewMore ? "View Less" : "View More"}
           </button>
         </div>
       </div>
